@@ -212,4 +212,8 @@ footer svg {
     footer li a{
         font-size: 1.1em;
     }
+
+    .footer-empresas img {
+        height: auto;
+        width: 100%;
 }
