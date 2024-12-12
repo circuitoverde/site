@@ -1,0 +1,269 @@
+/*      INICIO DO O QUE É      */
+
+.home-oqe h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-size: 45px;
+    margin-top: 100px;
+
+    font-family: 'Gamon Trial', sans-serif;
+    -webkit-text-stroke: 2px #12408e;
+    text-shadow: 09px 7px #0c295c;
+    color: #2bb82d;
+}
+
+.texto h2 {
+    color: #2bb82d;
+}
+
+.home-oqe p {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+/* ---------------COMEÇO DO CONTEÚDO------------------- */
+
+section {
+    padding-top: 20px;
+}
+
+.conteudo .texto {
+    max-width: 800px;
+    text-align: justify;
+    max-width: 40%;
+}
+
+.texto h2 {
+    font-family: 'Poppins';
+    padding-bottom: 15px;
+
+}
+
+#problema-lixo {
+    background-color: #ebebeb;
+    padding-left: 20px;
+    max-width: 79%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.conteudo img {
+    height: 250px;
+    width: 450px;
+    margin-right: 25px;
+    display: block;
+
+    box-shadow: #00000098 0px 3px 8px;
+}
+
+
+.conteudo-espelhado img {
+    height: 250px;
+    width: 550px;
+    margin-right: 25px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.596) 0px 3px 8px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+.conteudo-espelhado {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+
+}
+
+.conteudo p {
+    font-size: 1.1em;
+}
+
+.conteudo-espelhado p {
+    font-size: 1.1em;
+    text-align: justify;
+    max-width: 800px;
+    margin-right: 20px;
+}
+
+
+/*       FIM DO CONTEUDO      */
+
+
+#temas-h2 {
+    letter-spacing: 8px;
+    font-size: 50px;
+    font-family: "grafite";
+    color: #2bb82d;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #135014;
+
+}
+
+
+
+
+.h2-oqe {
+    text-align: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*     BOTAO         */
+.cards-container .card-button {
+
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #2bb82d;
+}
+
+.cards-container .card-button a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cards-container .card-button:hover {
+
+    background-color: #2ca50d;
+}  
+
+.cards-container .card-button a:hover {
+    color: #0646a7;
+}
+
+/*      FIM     DO    BOTAO      */
+
+
+/*        CARD MEIOS DE DESCARTE          */
+.cards-container .meios-de-descarte {
+    background-color: #f0f0f0;
+}
+
+.cards-container .meios-de-descarte:hover {
+    background-color: #0646a7;
+}
+
+.cards-container .meios-de-descarte p:hover {
+    color: #f9f9f9;
+}
+
+.cards-container .meios-de-descarte p {
+    color: black;
+}
+
+.cards-container .meios-de-descarte h2 {
+    color: #7cd05b;
+}
+
+/*       CARDS MEIOS DE DESCARTE      */
+
+/* ---------- TEMA ESCURO ---------- */
+.dark-mode {
+    background-color: #162738;
+}
+
+.dark-mode header {
+    background-color: #101922;
+}
+
+.dark-mode .footer-container {
+    background-color: #101922;
+}
+
+.dark-mode h2 {
+    color: #2bb82d;
+}
+
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode #problema-lixo {
+    background-color: #101922;
+}
+
+.dark-mode #problema-lixo p {
+    color: #ffffff;
+}
+
+.dark-mode #problema-lixo h2 {
+    color: #ffffff;
+}
+
+/* ----------- FIM DO TEMA ESCURO ---------- */
+
+@media (max-width:320px) {}
+
+@media (max-width:480px) {
+
+    .conteudo{
+        padding-bottom: 90px;
+    }
+
+    .conteudo,
+    .conteudo-espelhado {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-oqe p,
+    .texto p,
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .home-oqe p,
+    .texto p{
+        text-align: left;
+    }
+
+    .conteudo img{
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .conteudo-espelhado img{
+        width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .conteudo .texto {
+        max-width: 80%;
+    }
+
+    #problema-lixo{
+        max-width: 90%;
+    }
+
+    .conteudo-espelhado p{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:768px) {}
+
+@media (max-width:1024px) {}

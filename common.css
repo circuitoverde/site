@@ -1,0 +1,215 @@
+@import url('https://fonts.cdnfonts.com/css/gamon-trial');
+
+*{
+    transition: all 0.5s linear;
+}
+
+/* ----- Menu hamburger -----  */
+
+header {
+    background-color: #12408e;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;    
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.menu li{
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-align: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #2bb82d;
+}
+
+#dark-icon{
+    background-image: url(./Icons/light\ mode.svg);
+    height: 24px;
+} 
+
+/* ----- Fim do menu hamburger ----- */
+
+/*-------------- Onda da página inicio -----------------*/
+.wave-svg-header {
+    fill: #12408e;
+}
+
+.wave-svg-footer {
+    fill: #12408e;
+}
+
+.footer-container h3 {
+    color: #3be13d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1em;
+}
+
+footer li a{
+    font-size: 1.5em;
+}
+
+.footer-container {
+    display: flex;
+    background-color: #12408e;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-contatos {
+    text-decoration: none;
+}
+
+.footer-contatos li, .footer-contatos li a {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    font-family: poppins;
+}
+
+.footer-contatos li:hover {
+    color: #2bb82d;
+}
+
+.footerb li {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.footerb li:hover {
+    color: #2bb82d;
+}
+
+.footer-empresas {
+    gap: 80px;
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}
+
+#footer-empresas-h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    color: rgb(26, 26, 26);
+    background-color: #2bb82d;
+    border-radius: 10px;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+/* Contatos do Footer */
+.ct h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ct {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contatos li,
+.footerb li {
+    text-align: left;
+}
+
+.footerb li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ct span {
+    color: #2bb82d;
+    margin-top: 7px;
+}
+
+footer svg {
+    margin-bottom: -80px;
+}
+
+.footer-empresas img{
+    height: 130px;
+}
+
+#logo img {
+    height: 300px;
+}
+
+.dark-mode #dark-icon{
+    background-image: url(./Icons/dark\ mode.svg);
+}
+
+@media (max-width: 480px) {
+    nav{
+        justify-content: space-between;
+    }
+    
+    .menu li a {
+        font-size: 30px;
+    }
+    #dark-icon{
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bar {
+        width: 40px;
+        height: 8px;
+        margin: 6px;
+    }
+
+    .footer-container h3 {
+        font-size: 1.6em;
+    }
+    
+    footer li a{
+        font-size: 1.1em;
+    }
+}

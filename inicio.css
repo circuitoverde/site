@@ -1,0 +1,343 @@
+@font-face {
+    font-family: grafite;
+    src: url(./Fonts/GraffitiYouth.otf);
+}
+
+@import url('https://fonts.cdnfonts.com/css/bagel-fat-one');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+}
+
+#home .texto-landingpage-eletronico {
+    margin: 25px;
+
+}
+
+#home .texto-landingpage-eletronico h1 {
+    text-align: left;
+    color: #12408e;
+    font-size: 6rem;
+    font-family: 'Gamon Trial', sans-serif;
+    -webkit-text-stroke: 2px#35c538;
+    text-shadow: 10px 10px #0c295c;
+    margin-left: 15px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+#home .texto-landingpage-eletronico h1 span {
+
+    font-family: 'Gamon Trial', sans-serif;
+    letter-spacing: 3px;
+    color: #35c538;
+    font-size: 6rem;
+    -webkit-text-stroke: 2px #12408e;
+    text-shadow: 10px 10px #0c295c;
+}
+
+.texto-lixo {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    width: 500px;
+
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-tvs {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.texto-ld {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 15px;
+
+}
+
+/*-------------------------   INICIO      DOS     CARDS   --------------------------*/
+#imgs-container {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+#imgs-container .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 30px;
+}
+
+.card-container .card-botao button {
+    padding: 11px;
+    border: 1px solid #35c538;
+    border-radius: 5px;
+    background-color: #12408e;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card-container .card-botao button a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-img img {
+    border: 1px solid #a5a5a5;
+    box-shadow: 10px 10px 17px -4px #000000bf;
+    max-width: 50vh;
+    height: 200px;
+    width: 300px;
+}
+
+.card-text h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #12408e;
+    text-decoration: underline #35c538;
+}
+
+.card-text p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #111111;
+}
+
+.card-botao button {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*-------------------   FIM      DOS     CARDS   ---------------------*/
+
+/*      TRANSIÇÕES     */
+
+#imgs-container .card1 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card1:hover {
+    transform: scale(1.05);
+}
+
+
+#imgs-container .card2 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card2:hover {
+    transform: scale(1.05);
+}
+
+#imgs-container .card3 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card3:hover {
+    transform: scale(1.05);
+}
+
+
+/*   FIM TRANSIÇÕES    */
+
+
+/*---------------------       INICIO DOS HOVERS     ------------------*/
+
+
+.card-container .card-botao button:hover {
+    background-color: #0c295c;
+
+}
+
+.card-container .card-botao button a:hover {
+    color: #1dee5b;
+}
+
+/*---------------------       FIM DOS HOVERS     ------------------*/
+
+
+
+/*---------------------      CONTADOR       ------------------*/
+
+.barra-container {
+    height: 33vh;
+    width: 100%;
+    background-color: #12408e;
+    display: flex;
+}
+
+.barra-contador {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.barra-item img,
+.barra-item p,
+.barra-item h2 {
+    height: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.barra-item p {
+    font-size: 1.2em;
+}
+
+.barra-h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}
+
+/* ---------- TEMA ESCURO ---------- */
+.dark-mode {
+    background-color: #162738;
+}
+
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #101922;
+}
+
+.dark-mode .footer-container {
+    background-color: #101922;
+}
+
+.dark-mode .wave-svg-header {
+    fill: #101922;
+    transition: all 0.1s linear;
+}
+
+.dark-mode .barra-container {
+    background-color: #101922;
+}
+
+.dark-mode .wave-svg-footer {
+    fill: #101922;
+    transition: all 0.1s linear;
+}
+
+.dark-mode .card-container .card-text h3 {
+    color: #87D962;
+}
+
+/* ---------- FIM DO TEMA ESCURO ---------- */
+
+@media (max-width:320px) {}
+
+@media (max-width:480px) {
+
+    #home,
+    .cards-container,
+    .footer-empresas,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-landingpage-eletronico {
+        width: 80%;
+    }
+
+    .texto-landingpage-eletronico span {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .cards-container,
+    .cards {
+        width: 80%;
+    }
+
+    #footer-empresas-h2 {
+        max-width: 70%;
+        font-size: 2.5em;
+    }
+
+    .footer-container,
+    .footer-container h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-container div:not(.ct) {
+        margin-bottom: 50px;
+    }
+
+    .footer-empresas img {
+        height: 160px;
+    }
+
+    #logo img {
+        height: 400px;
+    }
+
+    .img-tvs {
+        margin-top: 0;
+    }
+
+    #imgs-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .barra-h2 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .barra-item p {
+        font-size: 1.1em;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
