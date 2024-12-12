@@ -216,4 +216,9 @@ footer svg {
     .footer-empresas img {
         height: auto;
         width: 100%;
+    }
+
+    footer, .footer-empresas, .footer-container{
+        width: 100%
+    }
 }
